@@ -1,0 +1,4 @@
+addUser Paolo none default
+rentBike default 4 31
+rentBike default 5 32
+returnBike default 4 32 5000 31 2500 

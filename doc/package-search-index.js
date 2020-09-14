@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"MyVelibGroup13","l":"fr.Group13.DesignPatternClasses"},{"m":"MyVelibGroup13","l":"fr.Group13.MainVelibClasses"}]

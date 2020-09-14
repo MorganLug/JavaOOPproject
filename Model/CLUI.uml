@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_GnwegKV1Eeq9B8ogi8j20A" name="CLUI">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_GoxLIKV1Eeq9B8ogi8j20A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LlF7MKV1Eeq9B8ogi8j20A" name="MainCLUI">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jW-pwKV6Eeq9B8ogi8j20A" name="systems"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NinX0KV1Eeq9B8ogi8j20A" name="main"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_JAurkKV2Eeq9B8ogi8j20A" name="CommandProcessing">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZDJmUKV2Eeq9B8ogi8j20A" name="identifyCommand"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LyEx0KV2Eeq9B8ogi8j20A" name="Command" isAbstract="true">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bRg7UKV2Eeq9B8ogi8j20A" name="processArguments"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cZqPIKV2Eeq9B8ogi8j20A" name="command"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_H-ih0KZSEeqLT78nOl-IjQ" memberEnd="_H-rrwKZSEeqLT78nOl-IjQ _H-vWIKZSEeqLT78nOl-IjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_H-p2kKZSEeqLT78nOl-IjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_H-p2kaZSEeqLT78nOl-IjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_H-rrwKZSEeqLT78nOl-IjQ" name="commandprocessing" type="_JAurkKV2Eeq9B8ogi8j20A" association="_H-ih0KZSEeqLT78nOl-IjQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_H-vWIKZSEeqLT78nOl-IjQ" name="mainclui" type="_LlF7MKV1Eeq9B8ogi8j20A" association="_H-ih0KZSEeqLT78nOl-IjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JoCPMKZSEeqLT78nOl-IjQ" memberEnd="_JoC2QKZSEeqLT78nOl-IjQ _JoC2QaZSEeqLT78nOl-IjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JoCPMaZSEeqLT78nOl-IjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JoCPMqZSEeqLT78nOl-IjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JoC2QKZSEeqLT78nOl-IjQ" name="command" type="_LyEx0KV2Eeq9B8ogi8j20A" association="_JoCPMKZSEeqLT78nOl-IjQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JoC2QaZSEeqLT78nOl-IjQ" name="commandprocessing" type="_JAurkKV2Eeq9B8ogi8j20A" association="_JoCPMKZSEeqLT78nOl-IjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LjyxQKZSEeqLT78nOl-IjQ" name="addUser">
+    <generalization xmi:type="uml:Generalization" xmi:id="_eJlAoKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MXOZUKZSEeqLT78nOl-IjQ" name="Display">
+    <generalization xmi:type="uml:Generalization" xmi:id="_e4NoQKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ryd6AKZSEeqLT78nOl-IjQ" name="DisplayStation">
+    <generalization xmi:type="uml:Generalization" xmi:id="_fazX8KZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_S6FCUKZSEeqLT78nOl-IjQ" name="DisplayUser">
+    <generalization xmi:type="uml:Generalization" xmi:id="_gCcmwKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_T7FMUKZSEeqLT78nOl-IjQ" name="Offline">
+    <generalization xmi:type="uml:Generalization" xmi:id="_iD6IMKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Uy-doKZSEeqLT78nOl-IjQ" name="Online">
+    <generalization xmi:type="uml:Generalization" xmi:id="_iv8HwKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Vd5C4KZSEeqLT78nOl-IjQ" name="RentBike">
+    <generalization xmi:type="uml:Generalization" xmi:id="_jbPHgKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WJyfkKZSEeqLT78nOl-IjQ" name="ReturnBike">
+    <generalization xmi:type="uml:Generalization" xmi:id="_kHXNsKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XXMG0KZSEeqLT78nOl-IjQ" name="Runtest">
+    <generalization xmi:type="uml:Generalization" xmi:id="_kr2a0KZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Yhq88KZSEeqLT78nOl-IjQ" name="Setup">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lUtKkKZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZOPIAKZSEeqLT78nOl-IjQ" name="SortStation">
+    <generalization xmi:type="uml:Generalization" xmi:id="_l_Kc0KZSEeqLT78nOl-IjQ" general="_LyEx0KV2Eeq9B8ogi8j20A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aDDQIKZSEeqLT78nOl-IjQ" name="Runini">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_q8qRkKZSEeqLT78nOl-IjQ" name="command"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rnglYKZSEeqLT78nOl-IjQ" name="launchIni"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oTsrQKZSEeqLT78nOl-IjQ" memberEnd="_oTt5YqZSEeqLT78nOl-IjQ _oTzY8KZSEeqLT78nOl-IjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oTt5YKZSEeqLT78nOl-IjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oTt5YaZSEeqLT78nOl-IjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oTt5YqZSEeqLT78nOl-IjQ" name="mainclui" type="_LlF7MKV1Eeq9B8ogi8j20A" association="_oTsrQKZSEeqLT78nOl-IjQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oTzY8KZSEeqLT78nOl-IjQ" name="runini" type="_aDDQIKZSEeqLT78nOl-IjQ" association="_oTsrQKZSEeqLT78nOl-IjQ"/>
+  </packagedElement>
+</uml:Model>
